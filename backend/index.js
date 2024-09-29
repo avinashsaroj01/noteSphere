@@ -12,7 +12,7 @@ const notesRoute = require('./routes/notes')
 const app = express()
 
 // mongoose init
-const dbUrl = process.env.DB_URL || 'mongodb+srv://avinashsarojpersonal:a9OHdQq7ctTx0rnV@cluster0.jaer6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
+const dbUrl = process.env.DB_URL || 'mongodb+srv://avinashsarojpersonal:avidb123@cluster0.jaer6.mongodb.net/mydb?retryWrites=true&w=majority&appName=Cluster0'
 // const dbUrl = process.env.DB_URL || 'mongodb://localhost:27017/inotebook'
 async function main() {
   await mongoose.connect(dbUrl);
