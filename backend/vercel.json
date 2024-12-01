@@ -1,14 +1,32 @@
 {
-    "version": 2,
-    "name": "native-server",
-    "builds": [{ "src": "index.js", "use": "@vercel/node" }],
-    "env": {
-    "NODE_OPTIONS": "--openssl-legacy-provider"
-  }
-    "routes": [{ "src": "/(.*)", "dest": "/index.js" }],
-    "functions": {
-      "api/**.js": {
-        "runtime": "nodejs16.x"
-      }
+  "version": 2,
+  "name": "native-server",
+  "builds": [
+    {
+      "src": "client/package.json",  // Frontend build
+      "use": "@vercel/static-build"  // For React or other static sites
+    },
+    {
+      "src": "backend/index.js",  // Backend build
+      "use": "@vercel/node"  // For Node.js API
+    }
+  ],
+  "env": {
+    "NODE_OPTIONS": "--openssl-legacy-provider"  // Add any environment variables here
+  },
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/client/$1"  // Route front-end traffic to the build output of the front-end
+    },
+    {
+      "src": "/api/(.*)",  // Route API requests to the backend
+      "dest": "/backend/index.js"  // Point to the backend API entry
+    }
+  ],
+  "functions": {
+    "backend/api/**.js": {
+      "runtime": "nodejs16.x"  // Node.js runtime for backend
     }
   }
+}
