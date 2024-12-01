@@ -1,15 +1,30 @@
 {
-    "version": 2,
-    "name": "native-server",
-    "builds": [{ "src": "index.js", "use": "@vercel/node" }],
-    "env": {
-    "NODE_OPTIONS": "--openssl-legacy-provider"
-  },
-    "routes":
-     [{ "src": "/(.*)", "dest": "/index.js" }],
-    "functions": {
-      "api/**.js": {
-        "runtime": "nodejs16.x"
-      }
+  "version": 2,
+  "name": "native-server",
+  "builds": [
+    {
+      "src": "client/package.json", 
+      "use": "@vercel/static-build"  
+    },
+    {
+      "src": "backend/index.js",  
+      "use": "@vercel/node" 
+    }
+  ],
+
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/client/$1"  
+    },
+    {
+      "src": "/api/(.*)",  
+      "dest": "/backend/index.js"  
+    }
+  ],
+  "functions": {
+    "backend/api/**.js": {
+      "runtime": "nodejs16.x" 
     }
   }
+}
