@@ -20,5 +20,13 @@
       "src": "/(.*)",
       "dest": "client/build/$1"
     }
-  ]
+  ],
+  
+    "functions": {
+      "api/**.js": {
+        "runtime": "nodejs16.x"
+      }
+    }
+  
+  
 }
