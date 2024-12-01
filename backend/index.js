@@ -19,7 +19,13 @@ async function main() {
 }
 main().catch(err => console.log(err));
 
-app.use(cors())
+app.use(cors({
+    origin: []   ,
+        methods: ["POST","GET","PUT","DELETE"],
+    credentials: true
+    
+}))
+
 
 // middleware
 app.use(express.json())
