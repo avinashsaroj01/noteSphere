@@ -5,5 +5,10 @@
     "env": {
     "NODE_OPTIONS": "--openssl-legacy-provider"
   }
-    "routes": [{ "src": "/(.*)", "dest": "/index.js" }]
+    "routes": [{ "src": "/(.*)", "dest": "/index.js" }],
+    "functions": {
+      "api/**.js": {
+        "runtime": "nodejs16.x"
+      }
+    }
   }
