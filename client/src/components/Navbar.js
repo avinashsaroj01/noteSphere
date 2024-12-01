@@ -18,7 +18,7 @@ function Navbar() {
     }
 
     return (
-        <nav className="navbar navbar-expand-lg navbar-light fixied-top ">
+        <nav className="navbar navbar-expand-lg navbar-light  ">
             <div className="container-fluid">
             <div>
                 
