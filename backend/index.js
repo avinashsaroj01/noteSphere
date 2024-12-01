@@ -20,7 +20,7 @@ async function main() {
 main().catch(err => console.log(err));
 
 app.use(cors({
-    origin: []   ,
+    origin: "http://localhost:3006"   ,
         methods: ["POST","GET","PUT","DELETE"],
     credentials: true
     
