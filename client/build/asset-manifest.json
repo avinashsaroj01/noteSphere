@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0e7df645.chunk.css",
+    "main.js": "/static/js/main.effce3ab.chunk.js",
+    "main.js.map": "/static/js/main.effce3ab.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.334dba35.js",
+    "runtime-main.js.map": "/static/js/runtime-main.334dba35.js.map",
+    "static/js/2.f284d7ab.chunk.js": "/static/js/2.f284d7ab.chunk.js",
+    "static/js/2.f284d7ab.chunk.js.map": "/static/js/2.f284d7ab.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.0e7df645.chunk.css.map": "/static/css/main.0e7df645.chunk.css.map",
+    "static/js/2.f284d7ab.chunk.js.LICENSE.txt": "/static/js/2.f284d7ab.chunk.js.LICENSE.txt",
+    "static/media/404.77ff311d.svg": "/static/media/404.77ff311d.svg",
+    "static/media/about - awesome.98d6002c.svg": "/static/media/about - awesome.98d6002c.svg",
+    "static/media/about - awesome.aaf8d049.jpeg": "/static/media/about - awesome.aaf8d049.jpeg",
+    "static/media/about.css": "/static/media/about.d512a2bf.jpg",
+    "static/media/avataaars.a91df79b.png": "/static/media/avataaars.a91df79b.png",
+    "static/media/empty.34ff4dca.svg": "/static/media/empty.34ff4dca.svg",
+    "static/media/inotebook.88c26f78.svg": "/static/media/inotebook.88c26f78.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.334dba35.js",
+    "static/js/2.f284d7ab.chunk.js",
+    "static/css/main.0e7df645.chunk.css",
+    "static/js/main.effce3ab.chunk.js"
+  ]
+}

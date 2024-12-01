@@ -27,7 +27,7 @@ app.use(express.json())
 
 // Routes
 app.get('/', (req, res) => {
-    res.send("Hello wprld")
+    res.send("Hello world")
 })
 
 app.use('/api/auth', authRoute)
