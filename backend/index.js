@@ -47,7 +47,7 @@ app.use((err, req, res, next) => {
     res.status(statusCode).json({success: false, message: err.message}); //For development
 })
 
-const port = process.env.PORT || 8080
+const port = process.env.PORT || 6000
 app.listen(port, (req, res) => {
-    console.log('Listening to the port 8080');
+    console.log('Listening to the port 6000');
 })
