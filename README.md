@@ -11,8 +11,6 @@ noteSphere is an advanced note-taking application built using the MERN stack (Mo
 - [Usage](#usage)
 - [Technologies Used](#technologies-used)
 - [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Installation
 
